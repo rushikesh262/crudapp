@@ -14,15 +14,7 @@ include "connct.php";
      $next = $page_counter + 1;
      $previous = $page_counter - 1;
     }
-    // query to get messages from messages table
-    // $q = "SELECT * FROM `tabledb` LIMIT $start, $per_page";
-    // $query = $pdo->prepare($q);
-    // $query->execute();
 
-    // if($query->rowCount() > 0){
-    //     $postcontent = $query->fetchAll(PDO::FETCH_ASSOC);
-    // }
-    // // count total number of rows in students table
     $count_query = "SELECT `id` FROM `tabledb`";
     $query = $pdo->prepare($count_query);
     $query->execute();
